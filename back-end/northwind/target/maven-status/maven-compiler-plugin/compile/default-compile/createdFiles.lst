@@ -1,0 +1,16 @@
+com/tdi/northwind/config/ProductRepository.class
+com/tdi/northwind/NorthwindApplication.class
+com/tdi/northwind/model/DataTableRequest.class
+com/tdi/northwind/config/DatasourceConfiguration.class
+util/Utility.class
+com/tdi/northwind/ProductController.class
+com/tdi/northwind/model/Kategori.class
+com/tdi/northwind/service/StorageService.class
+com/tdi/northwind/model/DataTablesResponse.class
+com/tdi/northwind/SuppliersController.class
+com/tdi/northwind/model/Suppliers.class
+com/tdi/northwind/config/SuppliersRepository.class
+com/tdi/northwind/ResourceServerFilter.class
+com/tdi/northwind/config/KategoriRepository.class
+com/tdi/northwind/model/Product.class
+com/tdi/northwind/KategoriController.class

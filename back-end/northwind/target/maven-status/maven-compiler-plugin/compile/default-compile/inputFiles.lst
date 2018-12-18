@@ -1,0 +1,16 @@
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/KategoriController.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/config/KategoriRepository.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/SuppliersController.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/NorthwindApplication.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/model/DataTablesResponse.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/service/StorageService.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/model/Kategori.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/ResourceServerFilter.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/model/Suppliers.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/config/SuppliersRepository.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/config/ProductRepository.java
+/home/dewissofiati/Documents/northwind/src/main/java/util/Utility.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/ProductController.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/model/Product.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/model/DataTableRequest.java
+/home/dewissofiati/Documents/northwind/src/main/java/com/tdi/northwind/config/DatasourceConfiguration.java
