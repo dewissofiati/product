@@ -1,0 +1,15 @@
+<title>KategoriModal</title>
+<h1 style="color:#c0ca33">
+  KATEGORIMODAL!
+</h1>
+
+<div>
+    <form [formGroup]="formCari" (ngSubmit)=cari() class="form-inline">
+      <input type="text" formControlName="nama" class="form-control"> &nbsp;
+      <button type="submit" class="btn btn-primary" style="background-color: #c0ca33; border-color: #c0ca33">Search</button>
+    </form>
+
+    <a href='/addkategorimodal' class="btn btn-primary" style="background-color: #c0ca33; border-color: #c0ca33; margin: 10px">Add Data</a>
+  <table datatable [dtOptions]="dtOptions" class="row-border hover"></table>
+  
+</div>

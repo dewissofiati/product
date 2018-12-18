@@ -1,0 +1,47 @@
+<title>Add Categories</title>
+
+<h1 style="color:#c0ca33">
+    ADD CATEGORIES!
+</h1>
+
+<div>
+    <form [formGroup]="tambahKategori" (ngSubmit)="simpanData()">
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-laber">Category ID</label>
+          <div col-sm-10>
+          <input type="text" [readonly]="isEdit == true" formControlName="categoryId" class="form-control">
+          <span *ngIf="tambahKategori.get('categoryId').invalid && tambahKategori.get('categoryName').touched" class="help block"
+          style="color:red">Category ID wajib di isi</span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-laber">Category Name</label>
+          <div col-sm-10>
+          <input type="text" formControlName="categoryName" class="form-control">
+          <span *ngIf="tambahKategori.get('categoryName').invalid && tambahKategori.get('description').touched" class="help block"
+          style="color:red">Category Name wajib di isi minimal 5 karakter</span>
+          </div>
+          </div>
+    
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-laber">Description</label>
+            <div col-sm-10>
+            <input type="text" formControlName="description" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-laber">Gambar Kategori</label>
+            <div col-sm-10>
+            <input type="file" accept=".png" name="file" formControlName="imgLocation" class="form-control" (change)="selectFile($event)">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div col-sm-10>
+            <button *ngIf=!isEdit class="btn btn-primary" type="submit" style="background-color: #c0ca33; border-color: #c0ca33">Save</button>
+            <button *ngIf=isEdit class="btn btn-primary" type="submit" style="background-color: #c0ca33; border-color: #c0ca33">Update</button>
+            </div>
+          </div>
+      </form>  
+</div>

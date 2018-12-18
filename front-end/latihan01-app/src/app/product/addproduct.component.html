@@ -1,0 +1,41 @@
+<title>Add Products</title>
+
+<h1 style="color:#c0ca33">
+    ADD PRODUCTS!
+</h1>
+
+<div>
+        <form [formGroup]="addProduct" (ngSubmit)="saveData()">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-laber">Product ID</label>
+              <div col-sm-10>
+              <input type="text" [readonly]="isEdit == true" formControlName="productId" class="form-control">
+              <span *ngIf="addProduct.get('productId').invalid && addProduct.get('productName').touched" class="help block"
+              style="color:red">Product ID wajib di isi</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-laber">Product Name</label>
+              <div col-sm-10>
+              <input type="text" formControlName="productName" class="form-control">
+              </div>
+              </div>    
+
+              <div class="form-group row">
+                    <label class="col-sm-2 col-form-laber">Category</label>
+                    <div col-sm-10>
+                    <input type="text" formControlName="categoryName" class="form-control">
+                    <button (click)="ngxSmartModalService.open('kategoriModal')"><i class='fa fa-search'></i></button>
+                    </div>
+                </div>    
+
+              <div class="form-group row">
+                <div col-sm-10>
+                <button *ngIf=!isEdit class="btn btn-primary" type="submit" style="background-color: #c0ca33; border-color: #c0ca33">Save</button>
+                <button *ngIf=isEdit class="btn btn-primary" type="submit" style="background-color: #c0ca33; border-color: #c0ca33">Update</button>
+                </div>
+              </div>
+          </form>  
+
+          <app-modal-kategori (sendDataToProduct)="eventFromModal($event)"></app-modal-kategori>
+    </div>

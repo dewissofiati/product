@@ -1,0 +1,137 @@
+<title>Welcome</title>
+<h1 style="color:#c0ca33">
+  WELCOME!
+</h1>
+
+<div>
+    <!-- <thead>
+      <tr>
+        <th>ID</th>
+        <th>Category Name</th>
+        <th>Description</th>
+      </tr>
+    </thead> -->
+
+    <form [formGroup]="formCari" (ngSubmit)=cari() class="form-inline">
+      <input type="text" formControlName="nama" class="form-control"> &nbsp;
+      <button type="submit" class="btn btn-primary" style="background-color: #c0ca33; border-color: #c0ca33">Search</button>
+    </form>
+
+    <a href='/addkategori' class="btn btn-primary" style="background-color: #c0ca33; border-color: #c0ca33; margin: 10px">Add Data</a>
+  <table datatable [dtOptions]="dtOptions" class="row-border hover"></table>
+
+    <ngx-smart-modal #imageModal identifier="imageModal" customClass='nsm-animation-fade modal-dialog'>
+      <img [src]="imageModal.hasData() ? imageModal.getData() : ''" class="img-responsive" alt="Logo url">
+    </ngx-smart-modal>
+
+  
+</div>
+    <!-- <tbody>
+      <tr>
+        <td>1</td>
+        <td>Foo</td>
+        <td>Bar</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Someone</td>
+        <td>Youknow</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Iamout</td>
+        <td>Ofinspiration</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Yoda</td>
+        <td>Skywalker</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Patrick</td>
+        <td>Dupont</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Barack</td>
+        <td>Obama</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>François</td>
+        <td>Holland</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Michel</td>
+        <td>Popo</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Chuck</td>
+        <td>Norris</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Simon</td>
+        <td>Robin</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Louis</td>
+        <td>Lin</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Zelda</td>
+        <td>Link</td>
+      </tr>
+    </tbody> -->
+  
+
+
+<!--<div>
+  <img src="https://cdn4.vectorstock.com/i/1000x1000/80/98/abstract-green-yellow-triangle-background-vector-1668098.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+  <img src="https://thumbs.dreamstime.com/z/abstract-multiple-green-yellow-pattern-25949180.jpg" class="img-circle" alt="green yellow pattern" width="304" height="236">
+  <img src="https://www.publicdomainpictures.net/pictures/70000/nahled/chevron-pattern-party-stripes.jpg" class="img-thumbnail" alt="another green" width="304" height="236">
+</div>
+
+<div class="table-responsive">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            -->
+  <!-- <table class="table"> -->
+  <!-- <table class="table table-striped"> -->
+  <!-- <table class="table table-bordered"> -->
+<!--  <table class="table table-hover table-condensed">
+    <thead>
+      <tr class="danger">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="warning">
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="success">
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="active">
+        <td>Dewi</td>
+        <td>Syarah</td>
+        <td>dewissofiati@gmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>-->
